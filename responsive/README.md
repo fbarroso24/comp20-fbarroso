@@ -1,7 +1,7 @@
-Filipe Barroso
-February 19, 2015
-Comp 20: Web Programming
-Lab 4: Responsive Design
+Filipe Barroso <br/>
+February 19, 2015 <br/>
+Comp 20: Web Programming <br/>
+Lab 4: Responsive Design <br/>
 
 --
 Identify what aspects of the work have been correctly implemented and what have not.
