@@ -1,10 +1,14 @@
 Filipe Barroso
+
 Feburary 19, 2015
+
 Comp 20: Web Programming
+
 Lab 4: Responsive Design
 
------
+--
 Identify what aspects of the work have been correctly implemented and what have not.
+--
 	Everything has been implemented per the lab 4 instructions.  That is, using the
 	given index.html and software.png image, a different part of the image will be 
 	rendered when the browser has been resized to the following specifications:
@@ -20,10 +24,12 @@ Identify what aspects of the work have been correctly implemented and what have 
 	If the browser screen width is greater than 400 pixels but less than or equal to 500 pixels, display the fourth image on the bottom row.
 	If the browser screen width less than or equals to 400 pixels, display the final image on the comic, the bottom-right-most image of software.png that reads "What the customer really needed".
 
------
+--
 Identify anyone with whom you have collaborated or discussed the assignment.
+--
 	N/A
 
------
+--
 Say approximately how many hours you have spent completing the assignment.
+--
 	2 Hours
