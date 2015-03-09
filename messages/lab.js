@@ -18,7 +18,7 @@ function parseData() {
 		//console.log("Got data back!");
 		//console.log(request.responseText);
 		messagesDiv = document.getElementById("messages");
-		converted = JSON.parse(request.responseText;
+		converted = JSON.parse(request.responseText);
 		console.log(converted);
 		
 		for (key in converted) {
