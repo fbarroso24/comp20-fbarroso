@@ -23,7 +23,7 @@ function parseData() {
 		
 		for (key in converted) {
 			console.log(converted[key]['content']);
-			messagesDiv.innerHTML += "<p>" +converted[key]['content'] + " - " converted[key]['username'];
+			messagesDiv.innerHTML += "<p>" +converted[key]['content'] + " - " + converted[key]['username'];
 		}
 		
 		// to print out keys of json if you don't know it.
