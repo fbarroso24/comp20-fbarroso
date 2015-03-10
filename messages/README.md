@@ -1,6 +1,6 @@
 Filipe Barroso <br>
 Comp 20: Web Engineering <br>
-Lab 6: Messaging<p>>
+Lab 6: Messaging<br>
 
 --
 1) Identify what aspects of the work have been correctly implemented and what have not.<br/>
@@ -17,6 +17,7 @@ Lab 6: Messaging<p>>
 
 --
 3) Say approximately how many hours you have spent completing the assignment.<br/>
+
 	3 Hours
 
 --
