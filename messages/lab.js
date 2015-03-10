@@ -3,7 +3,7 @@ function parse() {
 	request = new XMLHttpRequest();
 	
 	// Step 2: create or "open" HTTP request
-	request.open("GET", "http://messagehub.herokuapp.com/messages.json", true);
+	request.open("GET", "data.json", true);
 	
 	// Step 3: Set up way to manage response -- to a function
 	request.onreadystatechange = parseData;
@@ -13,28 +13,20 @@ function parse() {
 }
 
 function parseData() {
-	console.log("The ready state is" + request.readyState);
+	// console.log("The ready state is" + request.readyState);
 	if (request.readyState == 4 && request.status == 200) {
-		//console.log("Got data back!");
-		//console.log(request.responseText);
 		messagesDiv = document.getElementById("messages");
 		converted = JSON.parse(request.responseText);
 		console.log(converted);
 		
 		for (key in converted) {
 			console.log(converted[key]['content']);
-			messagesDiv.innerHTML += "<p>" +converted[key]['content'] + " - " + converted[key]['username'];
+			messagesDiv.innerHTML += "<p class='message'>" +converted[key]['content'] + " - " + converted[key]['username'];
 		}
-		
-		// to print out keys of json if you don't know it.
-		
-		for (key in converted[0]) {
-			console.log(key);
-		}
-	} else if (request.readyState == 4 && request.status != 200) {
-		alert("Hacked by the Chinese");
 	} else if (request.readyState == 4 && requrest.status == 304){
 		console.log("Nothing changed, move along");
+	} else if (request.readyState == 4 && request.status != 200) {
+		alert("Hacked by the Chinese");
 	} else {
 		console.log("Not done yet...");
 	}

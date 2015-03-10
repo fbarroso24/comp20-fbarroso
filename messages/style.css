@@ -1,1 +1,7 @@
-/* Your CSS here... */
+.message {
+	background-color: #99ff99;
+	border-radius: 15px;
+	padding: 5px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
