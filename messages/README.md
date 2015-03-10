@@ -4,6 +4,7 @@ Lab 6: Messaging<p>>
 
 --
 1) Identify what aspects of the work have been correctly implemented and what have not.<br/>
+
 	Navigating to <a href=http://tuftsdev.github.io/comp20-fbarroso/messages/>http://tuftsdev.github.io/comp20-fbarroso/messages</a> 
 	will parse the json data located in data.json and add each message object to the messages section in the order 
 	in which they appear in data.json.
@@ -21,6 +22,7 @@ Lab 6: Messaging<p>>
 --
 4) Is it possible to request the data from a different origin (e.g., http://messagehub.herokuapp.com/) 
 or from your local machine (from file:///) from using XMLHttpRequest? Why or why not?<br/>
+
 	By default it is not possibly due to the browser's Same Origin Policy.  This policy dictates 
 	that the only XMLHttpRequests that will succeed to the host are the ones that come from the host
 	that served up the original web page.
