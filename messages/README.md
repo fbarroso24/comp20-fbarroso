@@ -5,8 +5,8 @@ Lab 6: Messaging<br>
 --
 1) Identify what aspects of the work have been correctly implemented and what have not.<br/>
 
-	Navigating to <a href=http://tuftsdev.github.io/comp20-fbarroso/messages/>http://tuftsdev.github.io/comp20-fbarroso/messages</a> 
-	will parse the json data located in data.json and add each message object to the messages section in the order 
+	Navigating to http://tuftsdev.github.io/comp20-fbarroso/messages will parse the json data 
+	located in data.json and add each message object to the messages section in the order 
 	in which they appear in data.json.
 
 	Alternatively, I was also able to test it locally by running the following command.
