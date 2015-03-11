@@ -73,7 +73,7 @@
 		var mapOptions = {
 			zoom: 13,	// The larger the number, the bigger the zoom
 			center: myLoc,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
 		};
 
 		// Update map and zoom to my location
@@ -83,7 +83,8 @@
 		// Create a marker
 		var marker = new google.maps.Marker({
 			position: myLoc,
-			title: "Here I am!"
+			title: "Here I am!",
+			icon: "miniFlag.png"
 		});
 		marker.setMap(map);
 	}
