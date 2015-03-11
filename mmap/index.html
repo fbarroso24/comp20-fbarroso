@@ -12,6 +12,8 @@
 </body>
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script>
+	var debug = false;
+	var map;
 	var myLat = 0;
 	var myLng = 0;
 	var loginName = "EricDapper";
@@ -49,14 +51,34 @@
 	function parseData() {
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			jsonData = JSON.parse(xhr.responseText);
-			console.log("Found " + jsonData.length + " fellow maraurders");
-			for (key in jsonData) {
-				console.log("JSONData - id: " + jsonData[key]['_id'] + ", login: " + 
-					jsonData[key]['login'] + ", lat: " + jsonData[key]['lat'] + ", lng: "
-					+ jsonData[key]['lng'] + ", created at: " + jsonData[key]['created_at']);
+			if(jsonData.length) {
+				if(debug == true) {
+					console.log("Found " + jsonData.length + " fellow maraurders");
+					for (key in jsonData) {
+						console.log("JSONData - id: " + jsonData[key]['_id'] + ", login: " + 
+							jsonData[key]['login'] + ", lat: " + jsonData[key]['lat'] + ", lng: "
+							+ jsonData[key]['lng'] + ", created at: " + jsonData[key]['created_at']);
+					}
+				}
+				renderMap(jsonData);
+			} else {
+				// Ensure that the jsonData coming back has marauders (i.e jsonData.length)
+				alert("Whoops, something is wrong with your data");
 			}
 		}
+	}
 
+	function renderMap(data) {
+		var myLoc = new google.maps.LatLng(myLat, myLng);
+		var mapOptions = {
+			zoom: 13,
+			center: myLoc,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+
+		// Update map and zoom to my location
+		map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+		map.panTo(myLoc);
 	}
 </script>
 
