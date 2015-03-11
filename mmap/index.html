@@ -71,7 +71,7 @@
 	function renderMap(data) {
 		var myLoc = new google.maps.LatLng(myLat, myLng);
 		var mapOptions = {
-			zoom: 13,	// The larger the number, the bigger the zoom
+			zoom: 15,	// The larger the number, the bigger the zoom
 			center: myLoc,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 		};
@@ -87,6 +87,14 @@
 			icon: "miniFlag.png"
 		});
 		marker.setMap(map);
+
+		// Create marker info window
+		var infoWindow = new google.maps.InfoWindow();
+		var myInfo = loginName + "\n Latitude: " + myLat + " \n" + "Longitude: " + myLng;
+		google.maps.event.addListener(marker, 'click', function() {
+			infoWindow.setContent(myInfo);
+			infoWindow.open(map, marker);
+		});
 	}
 </script>
 
