@@ -17,17 +17,19 @@ function parseData() {
 	if (request.readyState == 4 && request.status == 200) {
 		messagesDiv = document.getElementById("messages");
 		converted = JSON.parse(request.responseText);
-		console.log(converted);
 		
 		for (key in converted) {
-			console.log(converted[key]['content']);
+			// console.log(converted[key]['content']);
 			messagesDiv.innerHTML += "<p class='message'>" +converted[key]['content'] + " - " + converted[key]['username'];
 		}
-	} else if (request.readyState == 4 && requrest.status == 304){
+	} 
+	/* For Debugging Purposes Only
+	else if (request.readyState == 4 && requrest.status == 304){
 		console.log("Nothing changed, move along");
 	} else if (request.readyState == 4 && request.status != 200) {
 		alert("Hacked by the Chinese");
 	} else {
 		console.log("Not done yet...");
-	}
+	} 
+	*/
 }
