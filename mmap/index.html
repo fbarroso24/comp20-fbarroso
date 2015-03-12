@@ -80,7 +80,6 @@
 		map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 		map.panTo(myLoc);
 
-		// Mark all the marauders on the map
 		for (key in marauders) {
 			addMarker(marauders[key]);
 		}
@@ -97,7 +96,7 @@
 			userInfo = loginName + "<br/> Latitude: " + myLat +"<br>" + "Longitude: " + myLng;
 		} else {
 			hover = name;
-			userInfo = name + "<br/> Distance to User: " + calcDistance();
+			userInfo = name + "<br/>" + calcDistance(marauderInfo) + " miles away";
 		}
 
 		// Set Marker on map
@@ -116,10 +115,26 @@
 		})
 	}
 
-	function calcDistance () {
-		return "0.0";
+	function calcDistance (marauderInfo) {
+		Number.prototype.toRad = function() {
+			return this * Math.PI / 180 ;
+		}
+
+		var r = 6371 / 1.6;
+		var x = myLat - marauderInfo['lat'];
+		var y = myLng - marauderInfo['lng'];
+		var dLat = x.toRad();
+		var dLon = y.toRad();
+
+		var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+			Math.cos(marauderInfo['lat'].toRad()) * Math.cos(myLat.toRad())
+			* Math.sin(dLon/2) * Math.sin(dLon/2);
+		var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+		var d = r * c;
+
+		// only return 2 decimal places
+		return d.toFixed(2);
 	}
 </script>
-
 
 </html>
