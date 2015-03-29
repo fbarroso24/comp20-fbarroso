@@ -27,7 +27,7 @@ Comp 20: Web Engineering<br>
 	HTML that was given to us in index.html directly.
 	
 	4. For convenience, I have pushed the code along with the audio to the gh-pages branch.
-	It can be viewed and tested here: <a href="http://tuftsdev.github.io/comp20-fbarroso/captainslog/"></a>
+	It can be viewed and tested here: http://tuftsdev.github.io/comp20-fbarroso/captainslog/
 	
 --
 2) Identify anyone with whom you have collaborated or discussed the assignment. <br/>
