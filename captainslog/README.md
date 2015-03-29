@@ -2,12 +2,12 @@ Filipe Barroso <br>
 Comp 20: Web Engineering <br>
 Lab 7: Captain's Log<br>
 
--- 
-Lab Objectives
-
+###Lab Objectives###
+--
 	1. Practice with data persistence via local storage
 	2. Practice using jQuery
 	
+###Lab Results###
 --
 1) Identify what aspects of the work have been correctly implemented and what have not.<br/>
 
@@ -18,7 +18,7 @@ Lab Objectives
 	Example) Sun Mar 29, 2015 16:05:32 GMT-0400 (EDT) - Beam me up Scotty!
 	
 	2. Messages are stored in local storage.  Thus, if a user leaves the page and 
-	returns, their messages will will be preserved and redisplayed.
+	returns, their messages will be preserved and redisplayed.
 	
 	3. In addition to using jQuery for this assignment, I also was able to experiment 
 	a bit with HTML5 audio elements.  I leveraged the jQuery framework to dynamically 
