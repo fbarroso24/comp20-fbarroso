@@ -1,6 +1,7 @@
-Filipe Barroso <br>
-Comp 20: Web Engineering <br>
+Filipe Barroso<br>
+March 29, 2015<br>
 Lab 7: Captain's Log<br>
+Comp 20: Web Engineering<br>
 
 ###Lab Objectives###
 
