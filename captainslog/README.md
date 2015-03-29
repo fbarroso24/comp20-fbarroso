@@ -3,12 +3,12 @@ Comp 20: Web Engineering <br>
 Lab 7: Captain's Log<br>
 
 ###Lab Objectives###
---
+
 	1. Practice with data persistence via local storage
 	2. Practice using jQuery
 	
 ###Lab Results###
---
+
 1) Identify what aspects of the work have been correctly implemented and what have not.<br/>
 
 	1. Users entering in log entries will have them dynamically appear on the page 
