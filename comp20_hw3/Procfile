@@ -1,0 +1,2 @@
+web: node server.js
+local: nodejs server.js
