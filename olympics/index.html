@@ -10,7 +10,7 @@
       <script src="http://d3js.org/topojson.v1.min.js"></script>
       <script src="scripts/datamaps.world.min.js"></script>
       <script src="scripts/d3pie.min.js"></script>
-      <script src="/scripts/main.js"></script>
+      <script src="scripts/main.js"></script>
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <link rel="stylesheet" href="chart.css" type="text/css"/>
     </head>
@@ -174,10 +174,10 @@
           <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by the Google Data Arts Team <span class="bull">&bull;</span> Data acquired from <a href="http://sedac.ciesin.columbia.edu/gpw/">SEDAC</a>
         </div>
 
-        <script type="text/javascript" src="/globe/third-party/Detector.js"></script>
-        <script type="text/javascript" src="/globe/third-party/three.min.js"></script>
-        <script type="text/javascript" src="/globe/third-party/Tween.js"></script>
-        <script type="text/javascript" src="/globe/globe.js"></script>
+        <script type="text/javascript" src="globe/third-party/Detector.js"></script>
+        <script type="text/javascript" src="globe/third-party/three.min.js"></script>
+        <script type="text/javascript" src="globe/third-party/Tween.js"></script>
+        <script type="text/javascript" src="globe/globe.js"></script>
         <script type="text/javascript">
 
           if(!Detector.webgl){
@@ -255,7 +255,7 @@
             
             
             xhr = new XMLHttpRequest();
-            xhr.open('GET', '/globe/data.json', true);
+            xhr.open('GET', 'globe/data.json', true);
             xhr.onreadystatechange = function(e) {
               if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
